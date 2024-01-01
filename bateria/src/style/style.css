@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: brown;
+}
+
+.mae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+img{
+    width: 500px;
+    object-fit: cover;
+}
+
+#h{
+    position: absolute;
+    top: 38%; 
+    left: 47%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+  }
+
+#p{
+    position: relative;
+    position: absolute;
+    top: 38%; 
+    left: 55%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+  }
+
+
+  #k{
+    position: relative;
+    position: absolute;
+    top: 21%; 
+    left: 41%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+  }
+
+  #u{
+    position: relative;
+    position: absolute;
+    top: 21%; 
+    left: 62%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+ 
+  }
+
+  #s{
+    position: relative;
+    position: absolute;
+    top: 31%; 
+    left: 65%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+  }
+
+  #c{
+    position: relative;
+    position: absolute;
+    top: 45%; 
+    left: 41%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+  }
+
+  #e{
+    position: relative;
+    position: absolute;
+    top: 67%; 
+    left: 51%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    border: none;
+    padding: 5px;
+  }
+
+
+  #f {
+      position: relative;
+      position: absolute;
+      top: 48%;
+      left: 57%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      border: none;
+      padding: 5px;
+      font-weight: bolder;
+
+  }

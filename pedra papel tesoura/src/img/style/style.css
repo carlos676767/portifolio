@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    margin-top: 150px;
+    
+}
+
+h2, h1{
+    color: #585e95;
+}
+
+
+
+.filha{
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+.placar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}

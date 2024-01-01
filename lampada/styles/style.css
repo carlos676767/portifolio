@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;
+  }
+
+  .filha{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .botoes{
+    display: flex;
+    justify-content: center;
+  }
+
+  button{
+    margin-right: 3px;
+    width: 100%;
+    padding: 3px;
+    cursor: pointer;
+    
+  }
+
+  .ligada, .quebrada{
+    display: none;
+  }
+
