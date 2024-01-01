@@ -29,6 +29,14 @@ Bem-vindo ao meu repositório do GitHub! Este é um projeto voltado para a const
    - Tecnologias: HTML, CSS, JavaScript.
    - teste agora: em breve
 
+  6 . ***Projeto: Lâmpada Interativa com JavaScript***
+- Uma lâmpada interativa construída usando HTML, CSS e JavaScript.
+- Os usuários podem clicar na lâmpada para ligar/desligar.
+- A interface reflete visualmente o estado da lâmpada (ligada/desligada).
+- Há uma opção adicional: os usuários podem clicar na lâmpada novamente para quebrá-la.
+- A lâmpada quebrada é visualmente representada na interface.
+- Tecnologias: HTML, CSS, JavaScript.
+- Teste Agora: Lâmpada Interativa (em breve).
 
 ## Contato
 
