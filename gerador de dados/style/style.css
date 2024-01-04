@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mae{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
