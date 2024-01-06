@@ -4,9 +4,6 @@ import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
   const p = document.querySelector(`p`)
 
   
-
-
-
 const gerarCpf = () => {
   const array = [];
   const cpf = document.getElementById("cpf")
@@ -62,7 +59,6 @@ const gerarEmail = () => {
 };
 
 
-
 const gerarNicks = () => {
   const nicks = document.getElementById("nicks");
   if (nicks.checked) {
@@ -70,28 +66,41 @@ const gerarNicks = () => {
     const numerosAleatorios = [];
     const caractreAleatorios = [];
 
-    for (let i = 0; i <= 2; i++) {
-      const alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
-     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x','y', 'z'];
-      const gerarAlfabeto = Math.floor(Math.random() * alfabeto.length);
-      const obterLetra = alfabeto[gerarAlfabeto];
-      letrasAleatorias.push(obterLetra);
+    const gerarAlfabeto = () => {
+      for (let i = 0; i <= 2; i++) {
+        const alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
+       'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x','y', 'z'];
+        const gerarAlfabeto = Math.floor(Math.random() * alfabeto.length);
+        const obterLetra = alfabeto[gerarAlfabeto];
+        letrasAleatorias.push(obterLetra);
+      }
     }
 
-    for (let i = 0; i < 1; i++) {
-      const gerarNumerosAleatros = Math.floor(Math.random() * 1000);
-      numerosAleatorios.push(gerarNumerosAleatros);
+    gerarAlfabeto();
+ 
+    const numerosAleatoriosGerar = () => {
+      for (let i = 0; i < 1; i++) {
+        const gerarNumerosAleatros = Math.floor(Math.random() * 1000);
+        numerosAleatorios.push(gerarNumerosAleatros);
+      }
+    };
+
+    numerosAleatoriosGerar();
+
+    const gerarCarcatres = () => {
+      for (let i = 0; i < 1; i++) {
+        const caracteresEspeciais = ['!', '@', '#', '$', '%', '^', '&', '*', ' ', '-', '_'];
+        const gerarCaractreAleatorio = Math.floor(
+          Math.random() * caracteresEspeciais.length
+        );
+        const retornarCaractre = caracteresEspeciais[gerarCaractreAleatorio];
+        caractreAleatorios.push(retornarCaractre);
+      }
     }
 
-    for (let i = 0; i < 1; i++) {
-      const caracteresEspeciais = ['!', '@', '#', '$', '%', '^', '&', '*', ' ', '-', '_'];
-      const gerarCaractreAleatorio = Math.floor(
-        Math.random() * caracteresEspeciais.length
-      );
-      const retornarCaractre = caracteresEspeciais[gerarCaractreAleatorio];
-      caractreAleatorios.push(retornarCaractre);
-    }
+    gerarCarcatres()
 
+   const mostrarDados = () => {
     const concatenarArrayLetras = letrasAleatorias.join("");
     const concatenarArrayNumeros = numerosAleatorios.join("");
     const concatenarArrayCaractre = caractreAleatorios.join("");
@@ -100,8 +109,15 @@ const gerarNicks = () => {
       concatenarArrayCaractre
     );
     p.textContent = `Dados gerados:  ${juntarArrays}`;
+   }
+
+   mostrarDados()
   }
 };
+
+
+
+
 const gerarCep = () => {
   const cep = document.getElementById("cep")
   if (cep.checked) {

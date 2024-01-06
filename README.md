@@ -29,18 +29,18 @@ Bem-vindo ao meu repositório do GitHub! Este é um projeto voltado para a const
    - Tecnologias: HTML, CSS, JavaScript.
    - teste agora: em breve
 
-<<<<<<< HEAD
+
  6. **Gerador de Dados**
 
 
 O Gerador de Dados é uma aplicação simples desenvolvida utilizando HTML, CSS e JavaScript. Ele oferece funcionalidades para gerar dados fictícios, como CPFs, nomes, e-mails, nicks de jogos e nomes reais. Além disso, o projeto inclui uma lâmpada interativa como um elemento visual interativo.
 
 ## Funcionalidades
-1. **Gerador de CPF:** Gera números de CPF válidos de forma aleatória.
-2. **Gerador de Nomes:** Gera nomes fictícios aleatórios.
-3. **Gerador de E-mails:** Gera endereços de e-mail fictícios.
-4. **Gerador de Nicks de Jogos:** Cria nicks de jogos de forma aleatória.
-5. **Gerador de Nomes Reais:** Gera nomes reais fictícios.
+- . **Gerador de CPF:** Gera números de CPF válidos de forma aleatória.
+- . **Gerador de Nomes:** Gera nomes fictícios aleatórios.
+- . **Gerador de E-mails:** Gera endereços de e-mail fictícios.
+- . **Gerador de Nicks de Jogos:** Cria nicks de jogos de forma aleatória.
+- . **Gerador de Nomes Reais:** Gera nomes reais fictícios.
 
 ### Lâmpada Interativa
 A lâmpada interativa é uma parte visual do projeto. Os usuários podem clicar para ligar/desligar a lâmpada. Além disso, há uma funcionalidade adicional onde os usuários podem quebrar a lâmpada, alterando visualmente o estado na interface.
@@ -54,7 +54,7 @@ A lâmpada interativa é uma parte visual do projeto. Os usuários podem clicar 
 - Teste Agora: Lâmpada Interativa (em breve).
 
 
-=======
+
   6 . ***Projeto: Lâmpada Interativa com JavaScript***
 - Uma lâmpada interativa construída usando HTML, CSS e JavaScript.
 - Os usuários podem clicar na lâmpada para ligar/desligar.
@@ -65,6 +65,18 @@ A lâmpada interativa é uma parte visual do projeto. Os usuários podem clicar 
 - Teste Agora: Lâmpada Interativa (em breve).
 
 
+
+ **7 .Projeto de Semáforo de Trânsito em JavaScript** 
+
+## Descrição
+Este é um projeto de semáforo de trânsito em JavaScript. O semáforo possui um modo automático que alterna as cores das luzes e botões adicionais para controlar manualmente cada cor.
+
+## Funcionalidades
+- **Semáforo Automático:** Botão para iniciar a mudança automática de cores.
+- **Parar Semáforo Automático:** Botão para interromper a mudança automática.
+- **Luz Vermelha:** Botão para acionar a luz vermelha.
+- **Luz Amarela:** Botão para acionar a luz amarela.
+- **Luz Verde:** Botão para acionar a luz verde.
 ## Contato
 
 Se você tiver alguma dúvida, sugestão ou apenas quiser entrar em contato, sinta-se à vontade para enviar uma mensagem para meu instagram: @chenrique_dev.

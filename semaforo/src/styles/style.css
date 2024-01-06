@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    width: 200px;
+    margin-left: 400px;
+    margin-top: 50px;
+    border-radius: 32px;
+}
+
+button{
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#vermelho{
+    background-color: #800000;
+    color: white;
+}
+
+#amarelo{
+    background-color: #FFD700;
+    color: white;
+}
+
+#verde{
+    background-color: #2F4F4F;
+    color: white;
+}
+
+img{
+    width: 100px;
+}
+
+#vermelhoSe, #amareloSe, #verdeSe{
+    display: none;
+}
+
