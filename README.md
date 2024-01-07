@@ -77,6 +77,12 @@ Este é um projeto de semáforo de trânsito em JavaScript. O semáforo possui u
 - **Luz Vermelha:** Botão para acionar a luz vermelha.
 - **Luz Amarela:** Botão para acionar a luz amarela.
 - **Luz Verde:** Botão para acionar a luz verde.
+
+ # Cronômetro em JavaScript
+
+Um simples cronômetro implementado em JavaScript, com as funcionalidades de parar, iniciar e reiniciar o contador.
+- Teste Agora:  (em breve).
+
 ## Contato
 
 Se você tiver alguma dúvida, sugestão ou apenas quiser entrar em contato, sinta-se à vontade para enviar uma mensagem para meu instagram: @chenrique_dev.
