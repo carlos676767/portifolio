@@ -83,6 +83,52 @@ Este é um projeto de semáforo de trânsito em JavaScript. O semáforo possui u
 Um simples cronômetro implementado em JavaScript, com as funcionalidades de parar, iniciar e reiniciar o contador.
 - Teste Agora:  (em breve).
 
+
+
+# Bloco de Notas
+
+O **Bloco de Notas** é uma aplicação simples, mas poderosa, que permite aos usuários fazer anotações de maneira fácil e eficiente. Aqui estão algumas das funcionalidades principais:
+
+## Funcionalidades
+
+### 1. Edição de Notas
+
+O Bloco de Notas oferece uma interface de edição intuitiva. Os usuários podem criar, visualizar e modificar suas notas de maneira conveniente. A funcionalidade de edição é acessível e amigável, proporcionando uma experiência de usuário agradável.
+
+### 2. Exclusão de Notas
+
+Você pode excluir notas facilmente quando não forem mais necessárias. A opção de exclusão permite uma gestão eficiente das suas notas, mantendo seu espaço de trabalho organizado.
+
+### 3. Dark Mode
+
+O Bloco de Notas inclui um elegante modo escuro (dark mode) para melhorar a experiência de uso, especialmente em ambientes com pouca luz. Ative o dark mode para reduzir o cansaço visual durante a noite.
+
+### 4. Contador de Letras
+
+Uma funcionalidade útil é o contador de letras. O Bloco de Notas exibe dinamicamente a contagem de letras à medida que você digita. Isso permite que os usuários monitorem facilmente o comprimento do texto, útil para limites de caracteres ou simplesmente para acompanhamento.
+
+## Como Usar
+
+1. **Editar Nota:**
+   - Clique na área de edição.
+   - Digite ou modifique o texto conforme necessário.
+
+2. **Excluir Nota:**
+   - Selecione a nota desejada.
+   - Procure a opção de exclusão e confirme quando solicitado.
+
+3. **Dark Mode:**
+   - Ative ou desative o modo escuro através do botão de alternância na barra de configurações.
+
+4. **Contador de Letras:**
+   - Observe a contagem de letras atualizada enquanto digita.
+
+Experimente todas essas funcionalidades para personalizar e aprimorar sua experiência de tomada de notas.
+
+---
+
+*Nota: Este Bloco de Notas foi desenvolvido com base nas necessidades específicas do usuário e busca proporcionar uma solução simples e eficaz para anotações diárias.*
+
 ## Contato
 
 Se você tiver alguma dúvida, sugestão ou apenas quiser entrar em contato, sinta-se à vontade para enviar uma mensagem para meu instagram: @chenrique_dev.
