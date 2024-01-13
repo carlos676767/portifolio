@@ -117,10 +117,9 @@ Uma funcionalidade útil é o contador de letras. O Bloco de Notas exibe dinamic
    - Selecione a nota desejada.
    - Procure a opção de exclusão e confirme quando solicitado.
 
-3. **Dark Mode:**
-   - Ative ou desative o modo escuro através do botão de alternância na barra de configurações.
 
-4. **Contador de Letras:**
+
+3. **Contador de Letras:**
    - Observe a contagem de letras atualizada enquanto digita.
 
 Experimente todas essas funcionalidades para personalizar e aprimorar sua experiência de tomada de notas.

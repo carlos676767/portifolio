@@ -1,16 +1,18 @@
-const editar = document.getElementById("editar")
-const deletar = document.getElementById("deletar")
+const editar = document.getElementById("editar");
+const deletar = document.getElementById("deletar");
 let array = [];
 let entrada = document.getElementById("valor");
+
 
 const editarInput = () => {
   entrada.addEventListener("input", function () {
     localStorage.setItem("input", entrada.value);
     array.push(entrada.value);
+    console.log(array);
 
     const contarLetras = () => {
-      const p = document.querySelector("p");
-      p.textContent = `Total de ja digitados ${array.length}`;
+      const p = document.getElementById("p");
+      p.textContent = `Total de caractrezes digitadas ${array.length}`;
     };
 
     contarLetras();
@@ -20,11 +22,8 @@ const editarInput = () => {
     let recuperar = localStorage.getItem("input");
     entrada.value = recuperar;
   };
-
   salvarDados();
 };
-
-
 
 
 editar.addEventListener("click", function () {
@@ -42,18 +41,14 @@ editar.addEventListener("click", function () {
 editarInput();
 
 
-
-
-const dialog = document.querySelector("dialog")
-const abrir = document.getElementById("add")
+const dialog = document.querySelector("dialog");
+const abrir = document.getElementById("add");
 abrir.addEventListener("click", function () {
   const abrirDialog = () => {
     dialog.showModal();
-
   };
-  abrirDialog()
+  abrirDialog();
 });
-
 
 
 deletar.addEventListener("click", function () {
@@ -63,13 +58,42 @@ deletar.addEventListener("click", function () {
   apagarDialog();
 });
 
+let titulo = document.getElementById("titulo");
+const editarTitulo = () => {
+  titulo.addEventListener("input", () => {
+    localStorage.setItem("titulos", titulo.value);
+  });
 
-
-const dark = document.getElementById("dark");
-dark.addEventListener("click", function () {
-  const alterarModo = () => {
-    document.body.classList.toggle("dark-mode");
+  const recuperarValorExibir = () => {
+    let receuperarValor = localStorage.getItem("titulos");
+    titulo.value = receuperarValor;
   };
-  alterarModo();
-});
+  recuperarValorExibir();
+};
 
+editarTitulo();
+
+const salvarDadosTexto = () => {
+  navigator.clipboard.writeText(entrada.value)
+}
+
+const copiarTitulo = () => {
+  navigator.clipboard.writeText(titulo.value)
+}
+
+const alertaCopiado = () => {
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Texto copiado na area de transferencia",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+
+
+const botaoCopiarTexto = document.getElementById("copiar")
+botaoCopiarTexto.addEventListener("click", () => {
+  salvarDadosTexto()
+  alertaCopiado()
+})

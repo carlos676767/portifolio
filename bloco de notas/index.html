@@ -6,22 +6,36 @@
     <title>bloco de notas</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=Gl2ZmjSc"></script>
+  
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css
+" rel="stylesheet">
 </head>
 <body>
-    <button id="dark">Mudar dark</button>
-    <button id="add"><i class="fa-solid fa-plus"></i> add nots</button>
+    <header><p id="nota">Notes editor - bloco de notas online grátis </p></header>
+   <div class="botoes">
+    <button id="add"><i class="fa-solid fa-plus"></i> add notes</button>
+    <button id="copiar"><i class="fa-solid fa-copy"></i> copiar texto</button>
+   </div>
     <dialog>
             <div class="icone">
                 <div class="cores">
                     <i class="fa-solid fa-pen-to-square" id="editar"></i>
                     <i class="fa-solid fa-trash" id="deletar"></i>
                 </div>
+                <input type="text" placeholder="titulo da nota" id="titulo">
                 <textarea name="text" id="valor" cols="20" rows="20"></textarea>
-                <p id="p"></p>
-                <button id="salvar">txt</button>
             </div>
+            <p id="p"></p>
     </dialog>
+  
+
+    <footer>
+        <p>By - csdev</p>
+    </footer>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js
+    "></script>
     <script src="src/app.js"></script>
 </body>
 </html>

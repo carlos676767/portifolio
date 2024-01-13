@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: #333;
 }
 
 textarea{
@@ -27,13 +27,12 @@ main{
 }
 
 .cores{
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     justify-content: center;
-    background-color: chartreuse;
-
-
+    background-color: #9ec862;
 }
 i, .cores{
     display: flex;
@@ -65,6 +64,11 @@ body {
 
 button{
     cursor: pointer;
+    background-color: #9ec862;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
 }
 
 .white-mode{
@@ -74,4 +78,62 @@ button{
 dialog{
     border: none;
     border-radius: 5px;
+}
+
+#add,i{
+    color: white;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #9ec862;
+    color: white;
+    padding: 5px;
+    z-index: 1;
+}
+
+
+input{
+    width: 100%;
+    margin-top: 1px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    z-index: 2;
+    padding: 3px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-left: 800px;
+    margin-top: 3px;
+}
+
+footer{
+    background-color: #9ec862;
+    margin-top: 400px;
+    padding: 100px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media(max-width: 768px){
+    .botoes{
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    footer{
+       padding: 100px;
+       font-weight: bold;
+       font-size: 30px;
+    }
 }
