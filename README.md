@@ -85,48 +85,33 @@ Um simples cronômetro implementado em JavaScript, com as funcionalidades de par
 
 
 
-# Bloco de Notas
+# Bloco de Notas Interativo com Dark Mode
 
-O **Bloco de Notas** é uma aplicação simples, mas poderosa, que permite aos usuários fazer anotações de maneira fácil e eficiente. Aqui estão algumas das funcionalidades principais:
+Este é um Bloco de Notas Interativo desenvolvido em HTML, CSS e JavaScript, agora com a adição de um Dark Mode. Com esta aplicação simples, você pode realizar várias operações no texto que você digitar. Abaixo estão as principais funcionalidades disponíveis:
 
-## Funcionalidades
+1. **Excluir Texto do Bloco de Notas:**
+   - Selecione o botão "Excluir" para limpar todo o conteúdo do bloco de notas.
 
-### 1. Edição de Notas
+2. **Editar Texto:**
+   - Simplesmente digite e edite o texto diretamente no bloco de notas.
 
-O Bloco de Notas oferece uma interface de edição intuitiva. Os usuários podem criar, visualizar e modificar suas notas de maneira conveniente. A funcionalidade de edição é acessível e amigável, proporcionando uma experiência de usuário agradável.
+3. **Copiar Texto do Bloco de Notas:**
+   - Utilize o botão "Copiar" para copiar o conteúdo do bloco de notas para a área de transferência.
 
-### 2. Exclusão de Notas
+4. **Gerar PDF com o Texto:**
+   - Clique em "Gerar PDF" para criar um arquivo PDF com o conteúdo atual do bloco de notas. Você poderá baixar o PDF gerado.
 
-Você pode excluir notas facilmente quando não forem mais necessárias. A opção de exclusão permite uma gestão eficiente das suas notas, mantendo seu espaço de trabalho organizado.
+5. **Verificar Número de Caracteres:**
+   - O número de caracteres digitados será exibido em tempo real abaixo do bloco de notas.
 
-### 3. Dark Mode
+6. **Mudar Fundo do Bloco de Notas:**
+   - Escolha a cor de fundo desejada clicando no botão "Mudar Fundo". Isso permite personalizar a aparência do bloco de notas.
 
-O Bloco de Notas inclui um elegante modo escuro (dark mode) para melhorar a experiência de uso, especialmente em ambientes com pouca luz. Ative o dark mode para reduzir o cansaço visual durante a noite.
-
-### 4. Contador de Letras
-
-Uma funcionalidade útil é o contador de letras. O Bloco de Notas exibe dinamicamente a contagem de letras à medida que você digita. Isso permite que os usuários monitorem facilmente o comprimento do texto, útil para limites de caracteres ou simplesmente para acompanhamento.
-
-## Como Usar
-
-1. **Editar Nota:**
-   - Clique na área de edição.
-   - Digite ou modifique o texto conforme necessário.
-
-2. **Excluir Nota:**
-   - Selecione a nota desejada.
-   - Procure a opção de exclusão e confirme quando solicitado.
-
-
-
-3. **Contador de Letras:**
-   - Observe a contagem de letras atualizada enquanto digita.
-
-Experimente todas essas funcionalidades para personalizar e aprimorar sua experiência de tomada de notas.
+7. **Dark Mode:**
+   - Ative o Dark Mode clicando no botão "Dark Mode". Isso alterará a aparência do bloco de notas para um tema escuro.
+- Teste Agora:  (https://notesjs-45f0f.web.app).
 
 ---
-
-*Nota: Este Bloco de Notas foi desenvolvido com base nas necessidades específicas do usuário e busca proporcionar uma solução simples e eficaz para anotações diárias.*
 
 ## Contato
 

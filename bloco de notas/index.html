@@ -4,38 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bloco de notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
     <link href="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css
 " rel="stylesheet">
+<link rel="shortcut icon" href="img/bloco-de-anotacoes.ico" type="image/x-icon">
 </head>
 <body>
-    <header><p id="nota">Notes editor - bloco de notas online grátis </p></header>
-   <div class="botoes">
-    <button id="add"><i class="fa-solid fa-plus"></i> add notes</button>
-    <button id="copiar"><i class="fa-solid fa-copy"></i> copiar texto</button>
-   </div>
-    <dialog>
-            <div class="icone">
-                <div class="cores">
-                    <i class="fa-solid fa-pen-to-square" id="editar"></i>
-                    <i class="fa-solid fa-trash" id="deletar"></i>
-                </div>
-                <input type="text" placeholder="titulo da nota" id="titulo">
-                <textarea name="text" id="valor" cols="20" rows="20"></textarea>
-            </div>
-            <p id="p"></p>
-    </dialog>
-  
+    <header>
+      <p id="nota">Notes editor - bloco de notas online grátis </p>
+    </header>
+    <main>
+      <div class="icone">
+        <div class="cores">
+          <i class="fa-solid fa-pen-to-square" id="editar"></i>
+          <i class="fa-solid fa-trash" id="deletar"></i>
+        </div>
+      <div id="div-inputs">
+        <input type="text" placeholder="Titulo da nota" id="titulo">
+        <textarea name="text" id="valor" cols="20" rows="20"></textarea>
+      </div>
+        <div class="botoes">
+          <button id="copiar"><i class="fa-solid fa-copy"></i> Copiar texto</button>
+          <button id="pdf"><i class="fa-solid fa-file-pdf"></i>Gerar pdf</button>
+          <button id="girar">
+            <p id="p">Total de caractrezes</p>
+          </button>
+          <button><input type="color" name="color" id="altera">Mude o fundo</button>
+          <select name="select" id="select">
+            <option value="select">white</option>
+            <option value="dark">Dark</option>
+   
+          </select>
+        </div>
+      </div>
+    </main>
 
-    <footer>
-        <p>By - csdev</p>
-    </footer>
-    <script src="
-    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js
-    "></script>
+
+
+
+
+    <section class="">
+      <footer >
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">notes js</h5>
+              <p id="texto-footer">
+                Bloco de Notas JS, celebração de 7 meses de aprendizado em JavaScript.
+                <br>Cada linha de código reflete compromisso e entusiasmo. Expressão <br>
+                tangível do
+                crescimento constante na programação. Agradecimento <br> pelo apoio, ansioso por mais conquistas.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">tecnologias</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-body"><i class="fa-brands fa-bootstrap"></i></a>
+                </li>
+                <li>
+                  <a href="#!" class="text-body"><i class="fa-brands fa-html5"></i></a>
+                </li>
+                <li>
+                  <a href="#!" class="text-body"><i class="fa-brands fa-css3-alt"></i></a>
+                </li>
+                <li>
+                  <a href="#!" class="text-body"><i class="fa-brands fa-js"></i></a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">contatos</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.instagram.com/chenrique_dev?igsh=cm9nZDNiaDU0ODFj" class="text-body"> <i
+                      class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/carlos-henrique-rodrigues-da-silva-9195372a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="text-body"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/carlos676767" class="text-body"><i class="fa-brands fa-github"></i></a>
+                </li>
+    
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3">
+          © 2024 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/">csDev</a>
+        </div>
+      </footer>
+    </section>
+
+
+
     <script src="src/app.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js
+        "></script>
+    </body>
+    </html>
