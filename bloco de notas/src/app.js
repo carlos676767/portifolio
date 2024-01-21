@@ -18,7 +18,7 @@ const editarInput = () => {
 
   const recuperarValorContador = () => {
     let recuperar = localStorage.getItem("contar");
-    p.textContent = `Total de caractrezes ${recuperar}`;
+    p.textContent = `Total de caracteres ${recuperar}`;
   };
   recuperarValorContador();
 
@@ -102,6 +102,8 @@ botaoPdf.addEventListener("click", () => {
   funcaoGerarPdf();
 });
 
+
+
 const inputColor = document.getElementById("altera");
 inputColor.addEventListener("input", () => {
   entrada.style.backgroundColor = inputColor.value;
@@ -118,6 +120,14 @@ const recuperarValorColor = () => {
 recuperarValorColor()
 
   
+const cores ={
+  White: "white",
+  cinza: "#808080",
+  black: "#333",
+};
+
+
+
 function DarkMode() {
   const select = document.querySelector("select");
   const white = document.querySelectorAll("option")[0];
@@ -126,51 +136,90 @@ function DarkMode() {
   let footer = document.querySelector("footer");
   let textoFooter = document.getElementById("texto-footer");
   let h5 = document.querySelectorAll("h5");
+  const menu = document.querySelectorAll("ul")[0]
+
+
+
+  const textoBranco = () =>{
+    const textoPheader = document.getElementById("textoheader")
+    textoPheader.style.color = cores.White
+  }
+
+  const manipularA = () => {
+    const tagA = document.querySelectorAll("a")
+    tagA.forEach(function(elemento) {
+      elemento.style.color = cores.White
+    })
+  }
 
   const percorrerH5 = () => {
     h5.forEach(function (elemento) {
-      elemento.style.color = "white";
+      elemento.style.color = cores.White;
     });
   };
 
+
   const headerEfooterWhite = () => {
-    document.body.style.backgroundColor = "#808080";
-    header.style.backgroundColor = "#808080";
-    footer.style.backgroundColor = "#808080";
+    document.body.style.backgroundColor = cores.cinza;
+    header.style.backgroundColor = cores.cinza;
+    footer.style.backgroundColor = cores.cinza;
   };
 
+
   const headerEfooterBlack = () => {
-    document.body.style.backgroundColor = "#333";
-    header.style.backgroundColor = "#333";
-    footer.style.backgroundColor = "#333";
+    document.body.style.backgroundColor = cores.black;
+    header.style.backgroundColor = cores.black;
+    footer.style.backgroundColor = cores.black;
   };
 
   const textoWhite = () => {
-    textoFooter.style.color = "white";
+    textoFooter.style.color = cores.White;
   };
 
+ 
+  const menuDacorBlack = () => {
+    menu.style.backgroundColor = cores.black
+  }
+
+  const menuWhite = () => {
+    menu.style.backgroundColor = cores.cinza
+  }
   select.addEventListener("change", () => {
     if (white.selected) {
       headerEfooterWhite();
-      localStorage.setItem("colorMode", "#808080");
+      textoBranco()
+      manipularA()
+      menuWhite()
+      localStorage.setItem("colorMode", cores.cinza);
     } else if (dark.selected) {
       headerEfooterBlack();
       textoWhite()
       percorrerH5();
-      localStorage.setItem("colorWhiteText", "#808080");
-      localStorage.setItem("colorMode", "black");
+      textoBranco()
+      manipularA()
+      menuDacorBlack()
+      localStorage.setItem("colorMode", cores.black);
     }
   });
 
+  
+
   const aplicarCorSalva = () => {
     const colorMode = localStorage.getItem("colorMode");
-    const ValorCorTexto = localStorage.getItem("colorWhiteText");
-    if (colorMode === "#808080") {
+    if (colorMode === cores.cinza) {
+      percorrerH5();
       headerEfooterWhite();
-    } else if (colorMode === "black" && ValorCorTexto === "#808080") {
+      textoWhite()
+      textoBranco()
+      manipularA()
+      menuWhite()
+    } else if (colorMode === cores.black) {
       percorrerH5();
       headerEfooterBlack();
       textoWhite();
+      textoBranco()
+      manipularA()
+      menuDacorBlack()
     }
   };
   aplicarCorSalva();
@@ -223,4 +272,4 @@ const exibirMensagem = () => {
     });
 };
 
-setInterval(exibirMensagem, 60000);
+setInterval(exibirMensagem, 1000000);

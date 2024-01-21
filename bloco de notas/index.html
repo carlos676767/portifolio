@@ -13,9 +13,16 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css
 <link rel="shortcut icon" href="img/bloco-de-anotacoes.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-      <p id="nota">Notes editor - bloco de notas online grátis </p>
-    </header>
+  <header class="header" >
+    <p id="textoheader"> <strong>Notes Js</strong></p>
+    <nav class="nav">
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="label-menu" id="label"><span class="hamburguer"></span></label>
+        <ul class="menu">
+            <li><a href="pages/informacoes.html" rel="next"> <strong>Recursos</strong></a></li>
+        </ul>
+    </nav>
+</header>
     <main>
       <div class="icone">
         <div class="cores">
@@ -30,13 +37,12 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css
           <button id="copiar"><i class="fa-solid fa-copy"></i> Copiar texto</button>
           <button id="pdf"><i class="fa-solid fa-file-pdf"></i>Gerar pdf</button>
           <button id="girar">
-            <p id="p">Total de caractrezes</p>
+            <p id="p">Total de caracteres</p>
           </button>
           <button><input type="color" name="color" id="altera">Mude o fundo</button>
           <select name="select" id="select">
             <option value="select">white</option>
             <option value="dark">Dark</option>
-   
           </select>
         </div>
       </div>
@@ -97,9 +103,9 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css
             </div>
           </div>
         </div>
-        <div class="text-center p-3">
+        <div class="footer-fim">
           © 2024 Copyright:
-          <a class="text-body" href="https://mdbootstrap.com/">csDev</a>
+          <a  href="https://mdbootstrap.com/">csDev</a>
         </div>
       </footer>
     </section>

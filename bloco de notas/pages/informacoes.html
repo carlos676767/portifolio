@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+
+    <header class="header" >
+        <p id="textoheader"> <strong>Notes Js</strong></p>
+        <nav class="nav">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="label-menu" id="label"><span class="hamburguer"></span></label>
+            <ul class="menu">
+                <li><a href="../index.html" rel="next" id="historico"><strong>home</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="container" id="container">
+        <h1>Bem-vindo à Página de Explicações</h1>
+
+        <div class="explanation">
+            <h2>1. Dark Mode:</h2>
+            <p>Esta opção permite ativar ou desativar o modo escuro na página.</p>
+        </div>
+
+        <div class="explanation">
+            <h2>2. Bloco de Notas:</h2>
+            <p>
+                Um bloco de notas é fornecido como uma área de texto editável para inserir suas notas. 
+                Existe também a opção para excluir o texto atual.
+            </p>
+        </div>
+
+        <div class="explanation">
+            <h2>3. Opções do Bloco de Notas:</h2>
+            <p>
+                Há botões disponíveis para  realizar  ações como copiar o texto do bloco de notas.
+                Além disso,  é possível  visualizar o total de letras digitadas.
+            </p>
+        </div>
+
+        <div class="explanation">
+            <h2>4. Estilo:</h2>
+            <p>
+                O estilo da página é adaptado para o modo escuro,  alterando a cor do fundo
+                 e do texto do bloco de notas,
+                 assim como a cor do fundo e do texto da página.
+            </p>
+        </div>
+
+        <div class="explanation">
+            <h2>5. Edição de Conteúdo:</h2>
+            <p>
+                Clicando na "caneta", é possível alternar entre o modo de edição e o modo de visualização no bloco de notas.
+            </p>
+        </div>
+        <select name="select" id="select">
+            <option value="select">Light</option>
+            <option value="dark">Dark</option>
+            <option value="reset">Reset to Default</option>
+          </select>
+         
+    </div>
+  
+    <script src="../src/script.js"></script>
+</main>
+</body>
+</html>

@@ -78,6 +78,7 @@ const gerarNicks = () => {
 
     gerarAlfabeto();
  
+
     const numerosAleatoriosGerar = () => {
       for (let i = 0; i < 1; i++) {
         const gerarNumerosAleatros = Math.floor(Math.random() * 1000);
@@ -99,7 +100,7 @@ const gerarNicks = () => {
     }
 
     gerarCarcatres()
-
+    
    const mostrarDados = () => {
     const concatenarArrayLetras = letrasAleatorias.join("");
     const concatenarArrayNumeros = numerosAleatorios.join("");
@@ -125,8 +126,6 @@ const gerarCep = () => {
    p.textContent = `Dados gerados:  ${fakeCEP}`
   }
 }
-
-
 
 button.addEventListener(`click`, function () {
   gerarCpf();
